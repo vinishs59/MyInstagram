@@ -1,0 +1,102 @@
+.post{
+    background-color: white;
+    max-width: 500px;
+    border: 1px solid lightgrey;
+    margin-bottom: 45px;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    /* object-fit: contain;
+    justify-content: center;
+    background: rgba(0,0,0,0.5); */ 
+}
+.post__text{
+    font-weight: normal;
+    padding : 20px;
+
+}
+.post__image {
+    width: 100%;
+    object-fit: contain;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    /* display: block;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 60px auto;
+    box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
+    border: 3px solid white;
+    position: absolute; */
+
+
+}
+.post__header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.post__avatar {
+    margin-right: 10px;
+
+}
+.post__commentbox{
+    display: flex;
+    margin-top: 10px;
+}
+.post__input{
+    flex:1;
+    border :none;
+    padding:10px;
+    border-top: 1px solid lightgray;
+}
+.post__button{
+    flex:0;
+    border:none;
+    border-top: 1px solid lightgray;
+}
+.post__comments{
+    padding:10px;
+    margin-left: 10px;
+    
+}
+.post__like{
+
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+  }
+  .backdrop img{
+    display: block;
+    max-width: 60%;
+    max-height: 80%;
+    margin: 60px auto;
+    box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
+    border: 3px solid white;
+  }
+  .img-wrap{
+    overflow: hidden;
+    height: 0;
+    padding: 50% 0;
+    /* padding controls height, will always be perfectly square regardless of width */
+    position: relative;
+    opacity: 0.8;
+  }
+  .img-wrap img{
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 150%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
